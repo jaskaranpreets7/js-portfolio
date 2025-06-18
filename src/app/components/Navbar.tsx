@@ -27,7 +27,7 @@ export default function Navbar() {
         <h1 className="text-xl font-bold">J.S</h1>
       </div>
       <div className="flex gap-4 text-sm md:text-base">
-        <Link href="/" className={getLinkClass('/')}>Home</Link>
+        <Link href="/" className={getLinkClass('/home')}>Home</Link>
         <Link href="/about" className={getLinkClass('/about')}>About</Link>
         <Link href="/projects" className={getLinkClass('/projects')}>Projects</Link>
         <Link href="/contact" className={getLinkClass('/contact')}>Contact</Link>
