@@ -56,7 +56,7 @@ const projects: IProjects[] = [
 
 export default function ProjectsTimeline() {
   const groupedData = useMemo(() => {
-    return projects.reduce((acc: any, cur: any) => {
+    return projects.reduce((acc: {[key:string]: IProjects[]}, cur: IProjects) => {
       if (!acc[cur.type]) {
         acc[cur.type] = []
       }
@@ -74,13 +74,13 @@ export default function ProjectsTimeline() {
       >
       <h1 className="text-4xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-500">Projects</h1>
       <div className="relative z-10 border-l-2 border-gray-600">
-        {Object.keys(groupedData).map((projectKey, idx) => (
+        {Object.keys(groupedData).map((projectKey) => (
           <div key={projectKey} className="mb-8">
             <h2 className="ml-8 inline-block text-lg font-semibold tracking-wide uppercase bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text mb-4">
               {TypeToLabel[projectKey]}
             </h2>
 
-            {groupedData[projectKey].map((project: any, index: number) => (
+            {groupedData[projectKey].map((project:IProjects, index: number) => (
               <div key={index} className="relative">
                 <div className="absolute w-4 h-4 bg-pink-400 rounded-full -left-2 top-1/2 transform -translate-y-1/2"></div>
                 <motion.div
