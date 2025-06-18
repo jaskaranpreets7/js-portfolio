@@ -13,7 +13,8 @@ export default function Navbar() {
   if (!mounted) return null
 
   const getLinkClass = (path: string) => {
-    const isActive = pathname === path
+    const isHome = path === '/home' && (pathname === '/' || pathname === '/home')
+    const isActive = path === pathname || isHome
     return `transition px-3 py-1 rounded-md text-sm font-medium ${
       isActive 
         ? 'text-pink-400 border-b-2 border-pink-400' 
