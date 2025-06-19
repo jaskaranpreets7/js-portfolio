@@ -13,7 +13,9 @@ export default function About() {
       <section className="mb-12">
         <h1 className="text-5xl font-bold mb-4">👋 About Me</h1>
         <p className="text-lg leading-relaxed">
-          {`I'm a Senior Software Engineer with over 8 years of experience designing and building scalable SaaS platforms and enterprise solutions. My passion lies in crafting interactive and performant front-end/full-stack experiences using technologies like <b>ReactJS, TypeScript, Redux, NestJS, NodeJS, PostgreSQL, and AWS</b>. I excel in collaborative environments, leading cross-functional teams and integrating AI/ML-driven features to solve complex problems.`}
+          {`I'm a Senior Software Engineer with over 8 years of experience designing and building scalable SaaS platforms and enterprise solutions. My passion lies in crafting interactive and performant front-end/full-stack experiences using technologies like`}
+          <b> ReactJS, TypeScript, Redux, NestJS, NodeJS, PostgreSQL, and AWS</b>
+          {`. I excel in collaborative environments, leading cross-functional teams and integrating AI/ML-driven features to solve complex problems.`}
         </p>
       </section>
 

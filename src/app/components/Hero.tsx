@@ -15,7 +15,7 @@ export default function Hero() {
         width={450} 
         height={450} 
         alt="Profile Picture" 
-        className="rounded-full shadow-lg object-cover mb-6 border-4 border-indigo-500"
+        className="rounded-full shadow-lg object-cover mb-6 border-4 bg-gradient-to-r from-pink-400 via-pink-600 to-purple-500"
       />
 
       <h1 className="text-5xl md:text-7xl font-bold mb-3">Jaskaranpreet Singh</h1>
