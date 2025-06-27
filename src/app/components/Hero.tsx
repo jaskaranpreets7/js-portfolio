@@ -22,6 +22,10 @@ export default function Hero() {
       <p className="text-xl md:text-2xl text-pink-400">
         🎯 Senior Software Engineer – Frontend/Fullstack
       </p>
+
+      <p className="text-base md:text-lg text-gray-400 mt-2">
+        📍 Based in San Francisco Bay Area, CA
+      </p>
     </motion.section>
   )
 }

@@ -29,7 +29,7 @@ export default function ProjectsTimeline() {
       acc[cur.type].push(cur)
       return acc
     }, {})
-  }, [])
+  }, [allProjects])
 
 
   const handleProjectClick = useCallback((id:string) => {

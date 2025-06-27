@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
 export default function ImageCarousel({screenshots}:any) {
@@ -47,16 +48,11 @@ export default function ImageCarousel({screenshots}:any) {
         <div>
             <div>
                 {screenshots.slice(startIndex, startIndex + VISIBLE_COUNT).map((img:any, idx:number) => (
-                    <img
-                        key={idx}
-                        src={img}
-                        alt={img}
-                        style={{
-                            width: `${500 / screenshots.length}%`,
-                            objectFit: 'contain',
-                            padding: '0 10px'
-                        }}
-                    />
+                        <Image 
+                        src={''}
+                        width={450} 
+                        height={450} 
+                        alt="project screenshot" />
                     ))}
             </div>
             <div style={{display:'flex', justifyContent:'space-around'}}>
