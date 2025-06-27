@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import Drawer from '../components/Drawer'
 import { v4 as uuidv4 } from 'uuid';
 import { TypeToLabel, projects } from '../constants/appConstants';
@@ -13,12 +13,12 @@ export type IProjects = {
   type: 'professional' | 'non-professional'
   techStack:string[]
   experience:string[]
-  screenshots?: any[]
+  screenshots?: string[]
 }
 
 export default function ProjectsTimeline() {
   const [isOpen,setIsOpen] = useState(false)
-  const [allProjects, setAllProjects] = useState<IProjects[]>(projects.map((p:IProjects) => ({...p,id:uuidv4()})))
+  const [allProjects] = useState<IProjects[]>(projects.map((p:IProjects) => ({...p, id:uuidv4()})))
   const [selectedProject,setSelectedProject] = useState<IProjects | null>(null)
 
   const groupedData = useMemo(() => {

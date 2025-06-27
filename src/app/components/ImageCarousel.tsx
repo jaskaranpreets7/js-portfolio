@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
-export default function ImageCarousel({screenshots}:any) {
+export default function ImageCarousel({screenshots}:{screenshots:string[]}) {
     const[ startIndex, setStartIndex] = useState<number>(0)
     const triggerRotate = useRef<boolean>(false)
-    const timerId = useRef<any>(null)
+    const timerId = useRef<NodeJS.Timeout | null>(null)
     const VISIBLE_COUNT = 3
 
     const onPrevHandler = useCallback(() => {
@@ -39,20 +39,25 @@ export default function ImageCarousel({screenshots}:any) {
         }
 
         return () => {
-            clearInterval(timerId.current)
-            timerId.current = null
+            if(timerId.current){
+                clearInterval(timerId.current)
+                timerId.current = null
+            }
         }
     }, [triggerRotate,screenshots])
 
     return (
         <div>
             <div>
-                {screenshots.slice(startIndex, startIndex + VISIBLE_COUNT).map((img:any, idx:number) => (
+                {screenshots.slice(startIndex, startIndex + VISIBLE_COUNT).map((img:string, idx:number) => (
+                    <div key={idx}>
+
                         <Image 
-                        src={''}
+                        src={img}
                         width={450} 
                         height={450} 
                         alt="project screenshot" />
+                        </div>
                     ))}
             </div>
             <div style={{display:'flex', justifyContent:'space-around'}}>
