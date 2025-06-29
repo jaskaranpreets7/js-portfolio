@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { TypeToLabel, projects } from '../constants/appConstants';
 import ImageCarousel from '../components/ImageCarousel';
 import { StaticImageData } from 'next/image';
+import { ArrowRight } from 'lucide-react'
 
 export type IProjects = {
   id?:string
@@ -65,12 +66,12 @@ export default function ProjectsTimeline() {
           </h2>
 
           {groupedData[projectKey].map((project:IProjects, index: number) => (
-            <div key={index} className="relative" onClick={() => handleProjectClick(project.id as string)}>
+            <div key={index} className="relative">
               <div className="absolute w-4 h-4 bg-pink-400 rounded-full -left-2 top-1/2 transform -translate-y-1/2"></div>
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.03 }}
-                className="ml-8 mb-6 p-6 rounded-xl shadow-lg backdrop-blur-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:shadow-pink-400/10 transition cursor-pointer"
+                className="ml-8 mb-6 p-6 rounded-xl shadow-lg backdrop-blur-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:shadow-pink-400/10 transition"
                 >
                 <div className="space-y-4">
                   <div>
@@ -87,13 +88,22 @@ export default function ProjectsTimeline() {
                   </div>
                 </div>
                 {project.screenshots && project.screenshots.length > 0 && (
-                <div>
-                  <span className="text-xs uppercase tracking-widest text-gray-500">Screenshots</span>
-                  <div className="flex justify-center mt-4">
-                    <ImageCarousel screenshots={project.screenshots} />
+                  <div>
+                    <span className="text-xs uppercase tracking-widest text-gray-500">Screenshots</span>
+                    <div className="flex justify-center mt-4">
+                      <ImageCarousel screenshots={project.screenshots} />
+                    </div>
                   </div>
+                )}
+                <div className="mt-6 flex justify-end">
+                  <button
+                    onClick={() => handleProjectClick(project.id as string)}
+                    className="flex items-center gap-2 text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-purple-500 px-4 py-2 rounded-full shadow-md hover:shadow-pink-500/30 transition cursor-pointer"
+                  >
+                    See Project Details
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
                 </div>
-              )}
               </motion.div>
             </div>
           ))}

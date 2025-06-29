@@ -37,7 +37,7 @@ export const projects: IProjects[] = [
         ]
     },
     {
-        company: 'PepsiCo',
+        company: 'PepsiCo (via Infosys) ',
         title: 'Precision Merchandising Platform (PLM)',
         description: 'A Precision Merchandising platform designed to deliver PDF-formatted planograms based on dynamic search criteria. PLM is a standalone application integrated within a Microfrontend Architecture, enabling consultants to strategically plan product placements across various store formats.',
         type: 'professional',
@@ -55,7 +55,7 @@ export const projects: IProjects[] = [
         ]
     },
     {
-        company: '7-Eleven',
+        company: '7-Eleven (via Infosys) ',
         title: 'Cash & Audit Management System',
         description: 'Global financial system for managing cash audits, reconciliation workflows, and store-level compliance reporting using a cloud-based architecture.',
         type: 'professional',
@@ -73,7 +73,7 @@ export const projects: IProjects[] = [
         ]
     },
     {
-        company: '7-Eleven',
+        company: '7-Eleven (via Infosys) ',
         title: 'Live View Tracker (LVT)',
         description: 'A real-time ReactJS web application enabling store associates to monitor mobile checkout activity and in-store customer interactions across multiple store locations, providing operational visibility and improving customer experience.',
         type: 'professional',
@@ -90,7 +90,7 @@ export const projects: IProjects[] = [
         ]
     },
     {
-        company: 'Blue Cross Blue Shield - Carefirst',
+        company: 'Blue Cross Blue Shield - Carefirst (via Infosys) ',
         title: 'Customer Insurance Portal',
         description: 'Self-service portal where users can manage insurance plans, assign primary physicians, file claims, and track the status of healthcare services for themselves and their dependents.',
         type: 'professional',
