@@ -1,5 +1,10 @@
 import { IProjects } from "../projects/page"
-
+import image1 from '../../../public/assets/blogsmanager-login.png';
+import image2 from  '../../../public/assets/blogsmanager-home.png'
+import image3 from '../../../public/assets/blogsmanager-create-new.png';
+import image4 from '../../../public/assets/blogsmanager-read-view.png';
+import image5 from '../../../public/assets/blogsmanager-chrome-extension-1.png';
+import image6 from '../../../public/assets/blogsmanager-chrome-extension-2.png'
 
 
 export const TypeToLabel: Record<string, string> = {
@@ -116,14 +121,7 @@ export const projects: IProjects[] = [
           'Managed project deployment, CI/CD setup, and version control via GitHub Actions and Firebase pipelines.',
           'Exploring upcoming features such as blog content categorization, reading time estimation, and a personalized dashboard.'
         ],
-        screenshots: [
-            require('../../../public/assets/blogsmanager-login.png').default,
-            require('../../../public/assets/blogsmanager-home.png').default,
-            require('../../../public/assets/blogsmanager-create-new.png').default,
-            require('../../../public/assets/blogsmanager-read-view.png').default,
-            require('../../../public/assets/blogsmanager-chrome-extension-1.png').default,
-            require('../../../public/assets/blogsmanager-chrome-extension-2.png').default
-        ]
+        screenshots: [image1,image2,image3,image4,image5,image6]
     },
     {
         company: 'Tesla Inc',

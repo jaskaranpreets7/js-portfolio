@@ -5,6 +5,7 @@ import Drawer from '../components/Drawer'
 import { v4 as uuidv4 } from 'uuid';
 import { TypeToLabel, projects } from '../constants/appConstants';
 import ImageCarousel from '../components/ImageCarousel';
+import { StaticImageData } from 'next/image';
 
 export type IProjects = {
   id?:string
@@ -14,7 +15,7 @@ export type IProjects = {
   type: 'professional' | 'non-professional'
   techStack:string[]
   experience:string[]
-  screenshots?: string[]
+  screenshots?: StaticImageData[]
 }
 
 export default function ProjectsTimeline() {

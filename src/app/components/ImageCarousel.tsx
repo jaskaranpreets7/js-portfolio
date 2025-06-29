@@ -1,9 +1,9 @@
 'use client'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
-export default function ImageCarousel({ screenshots }: { screenshots: string[] }) {
+export default function ImageCarousel({ screenshots }: { screenshots: StaticImageData[] }) {
     const [startIndex, setStartIndex] = useState<number>(0)
     const triggerRotate = useRef<boolean>(true)
     const timerId = useRef<NodeJS.Timeout | null>(null)
