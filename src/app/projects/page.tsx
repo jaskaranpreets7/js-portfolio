@@ -4,6 +4,7 @@ import { useCallback, useMemo, useState } from 'react'
 import Drawer from '../components/Drawer'
 import { v4 as uuidv4 } from 'uuid';
 import { TypeToLabel, projects } from '../constants/appConstants';
+import ImageCarousel from '../components/ImageCarousel';
 
 export type IProjects = {
   id?:string
@@ -84,6 +85,14 @@ export default function ProjectsTimeline() {
                     <p className="text-gray-300">{project.description}</p>
                   </div>
                 </div>
+                {project.screenshots && project.screenshots.length > 0 && (
+                <div>
+                  <span className="text-xs uppercase tracking-widest text-gray-500">Screenshots</span>
+                  <div className="flex justify-center mt-4">
+                    <ImageCarousel screenshots={project.screenshots} />
+                  </div>
+                </div>
+              )}
               </motion.div>
             </div>
           ))}

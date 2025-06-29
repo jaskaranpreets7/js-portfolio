@@ -79,23 +79,6 @@ export default function Drawer({ isOpen, onClose, selectedProject }: DrawerProps
                   ))}
                 </ul>
               </div>
-
-              {/* Screenshots */}
-              {selectedProject.screenshots && selectedProject.screenshots.length > 0 && (
-                <div>
-                  <span className="text-xs uppercase tracking-widest text-gray-500">Screenshots</span>
-                  <div className="grid grid-cols-2 gap-3 mt-2">
-                    {selectedProject.screenshots.map((src, idx) => (
-                      <img 
-                        key={idx}
-                        src={src}
-                        alt={`Screenshot ${idx + 1}`}
-                        className="rounded-lg border border-white/10"
-                      />
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
           </motion.div>
         </>

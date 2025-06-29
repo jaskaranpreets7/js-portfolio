@@ -1,5 +1,7 @@
 import { IProjects } from "../projects/page"
 
+
+
 export const TypeToLabel: Record<string, string> = {
     professional: 'Professional',
     'non-professional': 'Side Projects',
@@ -113,6 +115,14 @@ export const projects: IProjects[] = [
           'Practiced continuous improvement through iterative feature releases, bug fixes, and user feedback collection.',
           'Managed project deployment, CI/CD setup, and version control via GitHub Actions and Firebase pipelines.',
           'Exploring upcoming features such as blog content categorization, reading time estimation, and a personalized dashboard.'
+        ],
+        screenshots: [
+            require('../../../public/assets/blogsmanager-login.png').default,
+            require('../../../public/assets/blogsmanager-home.png').default,
+            require('../../../public/assets/blogsmanager-create-new.png').default,
+            require('../../../public/assets/blogsmanager-read-view.png').default,
+            require('../../../public/assets/blogsmanager-chrome-extension-1.png').default,
+            require('../../../public/assets/blogsmanager-chrome-extension-2.png').default
         ]
     },
     {
