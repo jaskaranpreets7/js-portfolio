@@ -1,19 +1,17 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-// import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 
 export default function Navbar() {
   const pathname = usePathname()
-  // const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
   if (!mounted) return null
 
   const getLinkClass = (path: string) => {
-    const isHome = path === '/home' && (pathname === '/' || pathname === '/home')
+    const isHome = path === '/about' && (pathname === '/' || pathname === '/about')
     const isActive = path === pathname || isHome
     return `transition px-3 py-1 rounded-md text-sm font-medium ${
       isActive 
@@ -28,17 +26,11 @@ export default function Navbar() {
         <h1 className="text-xl font-bold">J.S</h1>
       </div>
       <div className="flex gap-4 text-sm md:text-base">
-        <Link href="/" className={getLinkClass('/home')}>Home</Link>
-        <Link href="/about" className={getLinkClass('/about')}>About</Link>
+        <Link href="/" className={getLinkClass('/about')}>About</Link>
+        <Link href="/summary" className={getLinkClass('/summary')}>Summary</Link>
         <Link href="/projects" className={getLinkClass('/projects')}>Projects</Link>
         <Link href="/contact" className={getLinkClass('/contact')}>Contact</Link>
       </div>
-      {/* <button 
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-        className="bg-gray-600 px-3 py-2 rounded hover:bg-pink-500 transition text-white text-sm"
-      >
-        {theme === 'dark' ? '☀️' : '🌙'}
-      </button> */}
     </nav>
   )
 }

@@ -12,8 +12,8 @@ export default function Hero() {
     >
       <Image 
         src="/assets/main-profile-pic.jpg" 
-        width={450} 
-        height={450} 
+        width={400} 
+        height={400} 
         alt="Profile Picture" 
         className="rounded-full shadow-lg object-cover mb-6 border-4 bg-gradient-to-r from-pink-400 via-pink-600 to-purple-500"
       />
