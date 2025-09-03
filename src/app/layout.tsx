@@ -3,6 +3,7 @@ import { ThemeProvider } from './components/ThemeProvider'
 import Navbar from './components/Navbar'
 import ClientLayout from './components/ClientLayout'
 import ThreeDBackground from './components/ThreeDBackground'
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Jaskaranpreet Singh Portfolio',
@@ -15,12 +16,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans scroll-smooth bg-[#101828] text-gray-100 transition-colors duration-300">
         <ThemeProvider>
-
           <ThreeDBackground/>
           <Navbar />
           <ClientLayout>
             {children}
           </ClientLayout>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
