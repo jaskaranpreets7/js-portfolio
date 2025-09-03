@@ -81,7 +81,7 @@ export default function FunFact() {
         transition={{ duration: 0.6, delay: 0.8 }}
       >
         <p className="text-gray-500 dark:text-gray-400 italic text-lg">
-          Life's too short for boring stories! 🚀
+          Life&apos;s too short for boring stories! 🚀
         </p>
       </motion.div>
     </motion.section>

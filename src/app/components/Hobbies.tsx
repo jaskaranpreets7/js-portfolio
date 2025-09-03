@@ -46,7 +46,7 @@ export default function Hobbies() {
     >
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 dark:text-gray-100">
-          When I'm Not Coding
+          When I&apos;m Not Coding
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-400">
           Life beyond the terminal — my passions and interests
