@@ -67,7 +67,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`min-[430px]:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-60 mt-4' : 'max-h-0'}`}>
+      <div className={`min-[460px]:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-60 mt-4' : 'max-h-0'}`}>
         <div className="flex flex-col space-y-3 pb-4 text-center">
           <Link 
             href="/" 
