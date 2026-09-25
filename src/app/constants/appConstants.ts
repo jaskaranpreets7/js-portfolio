@@ -119,6 +119,20 @@ export const projects: IProjects[] = [
         ]
     },
     {
+        company: 'BookMySlot.ai',
+        title: 'BookMySlot.ai — AI Voice Receptionist',
+        description: 'A multi-tenant SaaS platform that gives appointment-based businesses an AI voice agent to answer their phone and book appointments — built from just their website URL.',
+        type: 'non-professional',
+        techStack: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS v4', 'shadcn/ui', 'Radix UI', 'Base UI', 'Vapi', 'ElevenLabs', 'OpenAI', 'Supabase (PostgreSQL)', 'Row-Level Security', 'Supabase Auth', 'Supabase Realtime', 'Stripe', 'Twilio', 'TanStack Table v9', 'Vitest', 'Playwright', 'Vercel', 'GitHub Actions'],
+        experience: [
+            'Built and shipped a multi-tenant AI voice-agent SaaS end to end (Next.js 16, React 19, TypeScript, Supabase, Vapi, OpenAI, Stripe, Twilio) — onboarding, billing, agent deployment, and dashboard.',
+            "Converted a business's website into a deployed AI phone receptionist in one flow: website scrape → LLM-generated persona → provisioned phone number → live agent with booking tools.",
+            'Eliminated double-booking under concurrent calls with a database-level exclusion constraint, and correctness-tested timezone handling across DST boundaries.',
+            'Enforced three-tier subscription gating server-side from a single source of truth, backed by Stripe webhooks and Postgres RLS for tenant isolation.',
+            'Wrote 364 unit tests and a 9-spec Playwright E2E suite, with typechecking and tests gated in CI.'
+        ]
+    },
+    {
         company: 'Blogs Manager LLC',
         title: 'Blogsmanager.com',
         description: 'A personal side project aimed at helping users centralize and organize their favorite blogs in a single, intuitive, and visually appealing interface.',
