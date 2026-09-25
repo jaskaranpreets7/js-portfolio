@@ -3,9 +3,21 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    company: 'Adobe Inc.',
+    role: 'Senior Software Engineer - Front End',
+    date: 'October 2025 - Present',
+    points: [
+      'Led cross-functional collaboration with Product, Design, and offshore Engineering teams to drive feature planning, technical decision-making, and phased rollouts, ensuring tight alignment with business and customer goals.',
+      'Architected and delivered scalable, AI-powered customer-facing features for Acrobat Spaces using React, Redux, and TypeScript within a modular drop-in architecture used across multiple surfaces.',
+      'Owned the end-to-end A/B experimentation lifecycle—from ideation and proof-of-concept to production rollout and upsell optimization—directly influencing user retention and conversion metrics.',
+      'Built reusable front-end infrastructure to support rapid experimentation, feature flagging, and data-driven UI iteration at scale.',
+      'Partnered closely with analytics and growth teams to translate experiment insights into high-impact product improvements.'
+    ]
+  },
+  {
     company: 'Bolster.AI',
     role: 'Senior Software Engineer - Full Stack',
-    date: 'May 2021 - Present',
+    date: 'May 2021 - October 2025',
     points: [
       'Architected scalable SaaS features using ReactJS, NestJS, ElasticSearch, and PostgreSQL.',
       'Improved system response times by 25% through API optimization and caching.',

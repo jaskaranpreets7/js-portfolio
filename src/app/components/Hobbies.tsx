@@ -18,7 +18,7 @@ export default function Hobbies() {
     {
       icon: "📚",
       title: "Reading or Listening podcasts",
-      description: "Tech, Space Science and True Crime"
+      description: "Tech, Space Science and Self Help/Motivational"
     },
     {
       icon: "🎨",

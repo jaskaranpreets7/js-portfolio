@@ -14,6 +14,20 @@ export const TypeToLabel: Record<string, string> = {
 
 export const projects: IProjects[] = [
     {
+        company: 'Adobe Inc.',
+        title: 'Acrobat Web, Post Sign & PDF Spaces',
+        description: 'AI-powered, customer-facing features for Acrobat Spaces built within a modular drop-in architecture used across multiple surfaces, with a strong focus on experimentation, feature flagging, and data-driven UI iteration.',
+        type: 'professional',
+        techStack: ['React', 'Redux', 'TypeScript', 'Styled-Components', 'Spectrum', 'Microfrontend / Drop-in Architecture', 'A/B Testing', 'Automation Testing', 'Playwright', 'Splunk'],
+        experience: [
+            'Led cross-functional collaboration with Product, Design, and offshore Engineering teams to drive feature planning, technical decision-making, and phased rollouts, ensuring tight alignment with business and customer goals.',
+            'Architected and delivered scalable, AI-powered customer-facing features for Acrobat Spaces using React, Redux, and TypeScript within a modular drop-in architecture used across multiple surfaces.',
+            'Owned the end-to-end A/B experimentation lifecycle—from ideation and proof-of-concept to production rollout and upsell optimization—directly influencing user retention and conversion metrics.',
+            'Built reusable front-end infrastructure to support rapid experimentation, feature flagging, and data-driven UI iteration at scale.',
+            'Partnered closely with analytics and growth teams to translate experiment insights into high-impact product improvements.'
+        ]
+    },
+    {
         company: 'Bolster AI',
         title: 'SaaS Platform & Internal Applications',
         description: 'Enterprise-grade B2B SaaS platform for automated detection and takedown of phishing and scam URLs across channels like web, social media, app stores, abuse mailboxes, and dark web. Included pre & post monitoring and internal workflows.',
